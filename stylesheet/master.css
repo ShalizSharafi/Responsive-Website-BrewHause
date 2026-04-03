@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@layer base{
+       body{
+              font-family:"Cabin Condensed",Calistoga,Inter;
+       }
+       @font-face {
+              font-family: "Cabin Condensed";
+              src: url(../fonts/Cabin_Condensed/CabinCondensed-Regular.ttf);
+       }
+       @font-face {
+              font-family: Calistoga;
+              src: url(../fonts/Calistoga/Calistoga-Regular.ttf);
+       }
+       @font-face {
+              font-family: Inter;
+              src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+       }
+       h1{
+              @apply text-[11vw] lg:text-[8vw] flex  justify-center text-center text-lightyellow capitalize w-[60%] lg:w-[40%]  ;
+       }
+       p{
+              @apply text-lightyellow text-[18px] w-1/2 sm:w-full text-center flex justify-center font-light tracking-wider;
+       }
+}
+
+@layer utilities{
+       .row{
+              @apply flex w-full flex-wrap;
+       }
+}
+
+@layer components{
+       .link{
+              @apply flex items-center justify-center py-2 px-3.5 bg-darkgreen text-lightyellow text-[16px]
+              font-light capitalize rounded-3xl duration-500 hover:bg-lightyellow hover:text-darkgreen;
+       }
+}
+
+@theme{
+       --animate-fadeUp:fadeUp both;
+       --color-white: rgb(252,243,217);
+	--color-lightyellow: rgb(255,236,184);
+	--color-darkgreen: rgb(29,78,26);
+	--color-green: rgb(45,90,39);
+	--color-greentransparent: rgba(29,78,26,.7);
+	--color-transparent1: rgba(29,78,26,.12);
+	--color-transparent2: rgba(29,78,26,.03);
+	--color-transparent3: rgba(252,243,217,.12);
+	--color-transparent4: rgba(252,243,217,.07);
+	--color-yellowtransparent: rgba(255,236,184,.7);
+       @keyframes fadeUp {
+from{
+opacity: 0;
+transform: translateY(10px) scale(0.5);
+}
+to{
+opacity: 1;
+transform: translateY(0) scale(1);
+}
+}
+
+}
