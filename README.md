@@ -1,4 +1,4 @@
-# ☕ Brewhaus – Coffee Shop Website
+# ☕ Brewhaus – Responsive Coffee Shop Website
 
 A modern, responsive coffee shop website built using **HTML** and **Tailwind CSS**.  
 This project focuses on clean UI design, smooth animations, and a strong visual identity inspired by cozy café experiences.
