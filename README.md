@@ -7,9 +7,7 @@ This project focuses on clean UI design, smooth animations, and a strong visual 
 
 ## 🌐 Live Demo
 
-👉 [View Website](#)  
-👉 [Responsive Preview](#)
-
+👉 [View Website](https://shalizsharafi.github.io/Responsive-Website-BrewHause/)  
 ---
 
 ## 📱 Responsive Design
