@@ -17,13 +17,22 @@
               src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
        }
        h1{
-              @apply text-[11vw] lg:text-[8vw] flex  justify-center text-center text-lightyellow capitalize w-[60%] lg:w-[40%] ;
+              @apply text-[11vw] lg:text-[6vw] flex  justify-center text-center text-lightyellow capitalize w-[60%] lg:w-[40%] ;
        }
        h2{
-              @apply text-[9vw] lg:text-[5vw] flex justify-center text-center text-darkgreen capitalize w-[60%] lg:w-[40%] ;
+              @apply text-[7vw] lg:text-[4vw] flex justify-center text-center text-darkgreen capitalize w-[60%] lg:w-[40%] ;
        }
        p{
               @apply text-lightyellow text-[18px] w-1/2 sm:w-full text-center flex justify-center font-light tracking-wider ;
+       }
+       .font-cabin{
+              font-family:"Cabin Condensed";
+       }
+       .font-Calistoga{
+              font-family: Calistoga;
+       }
+       .font-inter{
+              font-family: Inter;
        }
 }
 
@@ -41,10 +50,21 @@
        .cards{
               @apply w-full flex flex-wrap justify-center animate-fadeUp [animation-timeline:view()] ;
        }
+       .scroll-x{
+              &::-webkit-scrollbar{
+                     display: none;
+              }
+              border: 1px solid var(--color-greentransparent);
+       }
+       .scroll-items{
+              flex: 1 0 180px;
+              height: 50px;
+       }
 }
 
 @theme{
        --animate-fadeUp:fadeUp both;
+       --animate-carousel:carousel 20s infinite linear;
        --color-vanilla: rgb(252,243,217);
        --color-vanillagray:#F3EFD9;
 	--color-lightyellow: rgb(255,236,184);
@@ -69,6 +89,11 @@ transform: translateY(0) scale(1);
 opacity: 1;
 transform: translateY(0) scale(1);
 }
+}
+
+@keyframes carousel{
+       from{translate:0}
+       to{translate:-100%}
 }
 
 
